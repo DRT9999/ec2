@@ -4,4 +4,4 @@ AMI_ID=$(aws ec2 describe-images     --region us-east-1     --image-ids ami-0c15
 
 echo -e "run instance"
 
-aws ec2 run-instances --image-ids $(AIM_ID) --count 1 --instance-type t2.micro 
+aws ec2 run-instances --image-ids $(AMI_ID) --count 1 --instance-type t2.micro 
