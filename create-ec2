@@ -4,4 +4,4 @@ AMI_ID="ami-0c15e602d3d6c6c4a"
 
 echo -e "run instance"
 
-aws ec2 run-instances --image-id ${AMI_ID} --count 1 --instance-type t2.micro 
+aws ec2 run-instances --image-id "$AMI_ID" --instance-type t2.micro 
