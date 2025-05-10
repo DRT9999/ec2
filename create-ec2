@@ -1,6 +1,6 @@
 #!/bin/bash
 
-AMI_ID=$(ec2-user@wa ~]$ aws ec2 describe-images     --region us-east-1     --image-ids ami-0c15e602d3d6c6c4a | jq '.Images[]=.ImageID')
+AMI_ID=$(aws ec2 describe-images     --region us-east-1     --image-ids ami-0c15e602d3d6c6c4a | jq '.Images[]=.ImageID')
 
 echo -e "run instance"
 
